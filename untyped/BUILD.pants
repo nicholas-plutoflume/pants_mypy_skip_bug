@@ -1,0 +1,6 @@
+python_library(
+    name="lib",
+    sources=["untyped/**/*.py"],
+    skip_mypy=True,
+    interpreter_constraints=["CPython~=3.7"],
+)

@@ -1,0 +1,9 @@
+python_library(
+    name="lib",
+    sources=["typed/**/*.py"],
+    dependencies=[
+        "untyped:lib",
+    ],
+    interpreter_constraints=["CPython~=3.7"],
+    tags=["typecheck"],
+)
