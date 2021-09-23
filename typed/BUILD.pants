@@ -1,7 +1,13 @@
+resources(
+    name="typed",
+    sources=["typed/py.typed"]
+)
+
 python_library(
     name="lib",
     sources=["typed/**/*.py"],
     dependencies=[
+        ":typed",
         "untyped:lib",
     ],
     interpreter_constraints=["CPython~=3.7"],
